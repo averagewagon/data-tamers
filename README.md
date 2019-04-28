@@ -1,5 +1,5 @@
-# Data Tamers
-### United States education spending over time.
+# **Data Tamers**
+### _United States education spending over time._
 ## Why are you interested in this field/domain?
 There are a lot of interesting questions to be asked about the education spending
 throughout the past 3 decades, such as how nation social or political events
