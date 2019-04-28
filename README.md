@@ -11,9 +11,14 @@ data analysis would allow us to have a convenient resource that allows us to
 answer questions such as this.
 
 ## What other examples of data driven project have you found related to this domain (share at least 3)?
-https://www.edweek.org/ew/collections/quality-counts-2018-state-finance/map-per-pupil-spending-state-by-state.html  
-This is a map which shows the spending per pupil, organized by state, in 2018. It
-is shown on a US map, which is similar to how we want to present our data.
+
+[This](https://www.edweek.org/ew/collections/quality-counts-2018-state-finance/map-per-pupil-spending-state-by-state.html) is a map which shows the spending per pupil, organized by state, in 2018. It
+is shown on a U.S. map, which is similar to how we want to present our data.
+
+[This](https://www.statista.com/statistics/184272/educational-attainment-of-college-diploma-or-higher-by-gender/) is a graph showing the percentage of the U.S. population who completed four years of college or more from 1940 to 2018, broken down by gender.
+
+[This](https://www.statista.com/statistics/233301/median-household-income-in-the-united-states-by-education/) is another graph, which shows the median household income in the U.S. in 2017, by educational attainment of householder.
+
 
 ## What data-driven questions do you hope to answer about this domain (share at least 3)?
 https://www.governing.com/gov-data/education-data/state-education-spending-per-pupil-data.html
