@@ -12,7 +12,8 @@ answer questions such as this.
 
 ## What other examples of data driven project have you found related to this domain (share at least 3)?
 https://www.edweek.org/ew/collections/quality-counts-2018-state-finance/map-per-pupil-spending-state-by-state.html  
-This is a map which shows the spending per pupil via check this merge conflict dawg.
+This is a map which shows the spending per pupil, organized by state, in 2018. It
+is shown on a US map, which is similar to how we want to present our data.
 
 ## What data-driven questions do you hope to answer about this domain (share at least 3)?
 https://www.governing.com/gov-data/education-data/state-education-spending-per-pupil-data.html
