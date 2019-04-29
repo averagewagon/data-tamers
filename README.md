@@ -21,6 +21,13 @@ is shown on a U.S. map, which is similar to how we want to present our data.
 
 
 ## What data-driven questions do you hope to answer about this domain (share at least 3)?
+Which states have had the most growth in education spending over the last ~30 years?
+
+How have events such as the Columbine Shooting and Immigration Reform affected
+education spending?
+
+Is education spending increasing fast enough to keep up with the inflation rate?
+
 https://www.governing.com/gov-data/education-data/state-education-spending-per-pupil-data.html
 
 https://www.census.gov/programs-surveys/school-finances/data/tools.html
