@@ -30,10 +30,37 @@ Is education spending increasing fast enough to keep up with the inflation rate?
 
 ## Data Source Description
 ### elsec06.xls
-blahblahblah
+- Where did you download the data (e.g., a web URL)?
+  - https://www.census.gov/programs-surveys/school-finances/data/tables.html
+- How was the data collected or generated? Make sure to explain who collected the data (not - necessarily the same people that host the data), and who or what the data is about?
+  - like this
+- How many observations (rows) are in your data?
+  - This many
+- How many features (columns) are in the data?
+  - That many
+- What questions (from above) can be answered using the data in this dataset?
+  - These ones
 
 ### elsec16t.xls
-blahblahblah
+- Where did you download the data (e.g., a web URL)?
+  - https://www.census.gov/programs-surveys/school-finances/data/tables.html
+- How was the data collected or generated? Make sure to explain who collected the data (not - necessarily the same people that host the data), and who or what the data is about?
+  - like this
+- How many observations (rows) are in your data?
+  - This many
+- How many features (columns) are in the data?
+  - That many
+- What questions (from above) can be answered using the data in this dataset?
+  - These ones
 
 ### elsec97.xls
-blahblahblah
+- Where did you download the data (e.g., a web URL)?
+  - https://www.census.gov/programs-surveys/school-finances/data/tables.html
+- How was the data collected or generated? Make sure to explain who collected the data (not - necessarily the same people that host the data), and who or what the data is about?
+  - like this
+- How many observations (rows) are in your data?
+  - This many
+- How many features (columns) are in the data?
+  - That many
+- What questions (from above) can be answered using the data in this dataset?
+  - These ones
