@@ -27,11 +27,3 @@ How have events such as the Columbine Shooting and Immigration Reform affected
 education spending?
 
 Is education spending increasing fast enough to keep up with the inflation rate?
-
-https://www.governing.com/gov-data/education-data/state-education-spending-per-pupil-data.html
-
-https://www.census.gov/programs-surveys/school-finances/data/tools.html
-
-https://www.census.gov/govs/www/school06doc.html
-
-https://docs.google.com/spreadsheets/d/1_6rfhNPYU6VGcjIIimgotUtB_lkHGGWKoND25T-oc_w/edit?usp=sharing
