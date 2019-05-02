@@ -44,6 +44,7 @@ Is education spending increasing fast enough to keep up with the inflation rate?
 ### elsec16t.xls
 - Where did you download the data (e.g., a web URL)?
   - https://www.census.gov/programs-surveys/school-finances/data/tables.html
+  - https://www2.census.gov/govs/school/elsec06.xls
 - How was the data collected or generated? Make sure to explain who collected the data (not - necessarily the same people that host the data), and who or what the data is about?
   - like this
 - How many observations (rows) are in your data?
