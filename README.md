@@ -1,4 +1,5 @@
-# **Data Tamers**
+### Data Tamers
+# **Domain of Interest**
 ### _United States education spending over time._
 ## Why are you interested in this field/domain?
 There are a lot of interesting questions to be asked about the education spending
@@ -28,8 +29,8 @@ education spending?
 
 Is education spending increasing fast enough to keep up with the inflation rate?
 
-## Data Source Description
-### elsec06.xls
+# **Finding Data**
+## elsec06.xls
 - Where did you download the data (e.g., a web URL)?
   - https://www.census.gov/programs-surveys/school-finances/data/tables.html
   - https://www2.census.gov/programs-surveys/school-finances/tables/2006/secondary-education-finance/elsec06.xls
@@ -42,7 +43,7 @@ Is education spending increasing fast enough to keep up with the inflation rate?
 - What questions (from above) can be answered using the data in this dataset?
   - These ones
 
-### elsec16t.xls
+## elsec16t.xls
 - Where did you download the data (e.g., a web URL)?
   - https://www.census.gov/programs-surveys/school-finances/data/tables.html
   - https://www2.census.gov/programs-surveys/school-finances/tables/2016/secondary-education-finance/elsec16t.xls
@@ -55,7 +56,7 @@ Is education spending increasing fast enough to keep up with the inflation rate?
 - What questions (from above) can be answered using the data in this dataset?
   - These ones
 
-### elsec97.xls
+## elsec97.xls
 - Where did you download the data (e.g., a web URL)?
   - https://www.census.gov/programs-surveys/school-finances/data/tables.html
   - https://www2.census.gov/programs-surveys/school-finances/tables/1997/secondary-education-finance/elsec97.xls
