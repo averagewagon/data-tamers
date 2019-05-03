@@ -23,10 +23,9 @@ is shown on a U.S. map, which is similar to how we want to present our data.
 ## What data-driven questions do you hope to answer about this domain (share at least 3)?
 Which states have had the most growth in education spending over the last ~30 years?
 
-How have events such as the Columbine Shooting and Immigration Reform affected
-education spending?
+How do particular events, such as the Columbine Shooting and Immigration Reform and more, correlate with trends in education spending?
 
-Is education spending increasing fast enough to keep up with the inflation rate?
+How does education spending compare with the rate of inflation in the U.S.?
 
 # **Finding Data**
 ## elsec06.xls
@@ -40,7 +39,7 @@ Is education spending increasing fast enough to keep up with the inflation rate?
 - How many features (columns) are in the data?
   - 117
 - What questions (from above) can be answered using the data in this dataset?
-  - These ones
+  - All of the questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the middle range of the last 30 years, in the midst of Immigration Reform, and specifically during the year of the Carl D. Perkins Career and Technical Education Act. With data on the value of the dollar, we can also see how this spending in 2006 relates to that of other years, and how changes compare to inflation.
 
 ## elsec16t.xls
 - Where did you download the data (e.g., a web URL)?
@@ -53,7 +52,7 @@ Is education spending increasing fast enough to keep up with the inflation rate?
 - How many features (columns) are in the data?
   - 40
 - What questions (from above) can be answered using the data in this dataset?
-  - These ones
+  - Again, all of the questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the recent range of the last 30 years, and the beginnings of education under Betsy DeVoss in the Trump administration. Additionally, this data may add context to the January 11 teacher protest of this year, protesting the debt of Detroit Public Schools. With data on the value of the dollar, we can also see how this spending in 2016 relates to that of other years, and how changes compare to inflation.
 
 ## elsec97.xls
 - Where did you download the data (e.g., a web URL)?
@@ -66,4 +65,4 @@ Is education spending increasing fast enough to keep up with the inflation rate?
 - How many features (columns) are in the data?
   - 105
 - What questions (from above) can be answered using the data in this dataset?
-  - These ones
+  - Again, all of the questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the early to mid range of the last 30 years, and increased funding for preschool education. With data on the value of the dollar, we can also see how this spending in 1997 relates to that of other years, and how changes compare to inflation.
