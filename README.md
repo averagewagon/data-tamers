@@ -27,6 +27,8 @@ How do particular events, such as the Columbine Shooting and Immigration Reform 
 
 How does education spending compare with the rate of inflation in the U.S.?
 
+How does the number of school shootings compare over time between private and public schools?
+
 # **Finding Data**
 ## elsec06.xls
 - Where did you download the data (e.g., a web URL)?
@@ -39,7 +41,7 @@ How does education spending compare with the rate of inflation in the U.S.?
 - How many features (columns) are in the data?
   - 117
 - What questions (from above) can be answered using the data in this dataset?
-  - All of the questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the middle range of the last 30 years, in the midst of Immigration Reform, and specifically during the year of the Carl D. Perkins Career and Technical Education Act. With data on the value of the dollar, we can also see how this spending in 2006 relates to that of other years, and how changes compare to inflation.
+  - The top three questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the middle range of the last 30 years, in the midst of Immigration Reform, and specifically during the year of the Carl D. Perkins Career and Technical Education Act. With data on the value of the dollar, we can also see how this spending in 2006 relates to that of other years, and how changes compare to inflation.
 
 ## elsec16t.xls
 - Where did you download the data (e.g., a web URL)?
@@ -52,7 +54,7 @@ How does education spending compare with the rate of inflation in the U.S.?
 - How many features (columns) are in the data?
   - 40
 - What questions (from above) can be answered using the data in this dataset?
-  - Again, all of the questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the recent range of the last 30 years, and the beginnings of education under Betsy DeVoss in the Trump administration. Additionally, this data may add context to the January 11 teacher protest of this year, protesting the debt of Detroit Public Schools. With data on the value of the dollar, we can also see how this spending in 2016 relates to that of other years, and how changes compare to inflation.
+  - Again, the first three questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the recent range of the last 30 years, and the beginnings of education under Betsy DeVoss in the Trump administration. Additionally, this data may add context to the January 11 teacher protest of this year, protesting the debt of Detroit Public Schools. With data on the value of the dollar, we can also see how this spending in 2016 relates to that of other years, and how changes compare to inflation.
 
 ## elsec97.xls
 - Where did you download the data (e.g., a web URL)?
@@ -65,4 +67,16 @@ How does education spending compare with the rate of inflation in the U.S.?
 - How many features (columns) are in the data?
   - 105
 - What questions (from above) can be answered using the data in this dataset?
-  - Again, all of the questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the early to mid range of the last 30 years, and increased funding for preschool education. With data on the value of the dollar, we can also see how this spending in 1997 relates to that of other years, and how changes compare to inflation.
+  - Again, the first three questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the early to mid range of the last 30 years, and increased funding for preschool education. With data on the value of the dollar, we can also see how this spending in 1997 relates to that of other years, and how changes compare to inflation.
+
+  ## cps_01_formatted.csv
+  - Where did you download the data (e.g., a web URL)?
+    - https://github.com/ecodan/school-shooting-data
+  - How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
+    - This data was compiled by GitHub user "ecodan" based on information from the [dataset underlying the Pah/Amaral/Hagan research](https://news.northwestern.edu/stories/2017/01/shootings-us-schools-link-unemployment) and a [Wikipedia article](https://en.wikipedia.org/wiki/School_shootings_in_the_United_States) on school shootings in the U.S. from 1990 to present. Pah compiled the first source by compiling previously-used data sets, reading reports on each incident of gun violence and establishing criteria for what constituted an incident. Wikipedia's list is compiled from various reports, added by various contributors. This particular dataset details the reported number of school shootings in the U.S., broken down by year and type of school (level and public vs. private.
+  - How many observations (rows) are in your data?
+    - 64
+  - How many features (columns) are in the data?
+    - 18
+  - What questions (from above) can be answered using the data in this dataset?
+    - This dataset will help answer our fourth question, since it breaks down the number of reported school shootings by private vs. public school over 64 years.
