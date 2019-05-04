@@ -6,7 +6,7 @@ throughout the past 3 decades, such as how nation social or political events
 affect different counties and states differently. Did Washington increase
 education spending in response to President Bill Clinton's illegal immigration
 reform more than Texas did? How has the education spending by district in New
-York changed over the years, with respect to gentrification? Performing this
+York changed over the years, with respect to gentrification? How does educational spending impact the youth? Performing this
 data analysis would allow us to have a convenient resource that allows us to
 answer questions such as this.
 
@@ -28,6 +28,8 @@ How do particular events, such as the Columbine Shooting and Immigration Reform 
 How does education spending compare with the rate of inflation in the U.S.?
 
 How does the number of school shootings compare over time between private and public schools?
+
+Does educational spending have an impact juvenile crime rates?
 
 # **Finding Data**
 ## elsec06.xls
@@ -80,3 +82,15 @@ How does the number of school shootings compare over time between private and pu
     - 18
   - What questions (from above) can be answered using the data in this dataset?
     - This dataset will help answer our fourth question, since it breaks down the number of reported school shootings by private vs. public school over 64 years.
+
+ ## Juvenile Arrests by Crime in the US
+    - Where did you download the data (e.g., a web URL)?
+      - This dataset is an [API](https://public.opendatasoft.com/explore/dataset/juvenile-arrests-by-crime-in-the-us/table/?dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQVZHIiwieUF4aXMiOiJjb3VudCIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6IiMyQzNGNTYifV0sInhBeGlzIjoieWVhciIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIiLCJjb25maWciOnsiZGF0YXNldCI6Imp1dmVuaWxlLWFycmVzdHMtYnktY3JpbWUtaW4tdGhlLXVzIiwib3B0aW9ucyI6e319fV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9)
+
+    - This dataset was collected by the Uniform Crime Reporting Program (URC). The arrests are by offense and categorized by age, sex, and sometimes race. The URC considers juveniles to be any individual under 18 years old. The years in this dataset range from 1995-2016.
+    - How many observations (rows) are in your data?
+      - 1920
+    - How many features (columns) are in the data?
+      - 4
+    - What questions (from above) can be answered using the data in this dataset?
+      - The last question can be answered by grouping this dataset and the education spending datasets by year. After this grouping the datasets can be joined and trends in educational spending and juvenile crime rates will be analyzed.    
