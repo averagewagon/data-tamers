@@ -37,7 +37,9 @@ Does educational spending have an impact juvenile crime rates?
   - https://www.census.gov/programs-surveys/school-finances/data/tables.html
   - https://www2.census.gov/programs-surveys/school-finances/tables/2006/secondary-education-finance/elsec06.xls
 - How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
-  - Like this
+  - The U.S. Census Bureau as authorized by Title 13, United States Code, Section 161 and 182,
+  surveys every school in the United States, including Washington D.C., in order to collect
+  information on Education finance data include revenues, expenditures, debt, and assets [cash and security holdings] of elementary and secondary public school systems.
 - How many observations (rows) are in your data?
   - 15188
 - How many features (columns) are in the data?
@@ -50,7 +52,9 @@ Does educational spending have an impact juvenile crime rates?
   - https://www.census.gov/programs-surveys/school-finances/data/tables.html
   - https://www2.census.gov/programs-surveys/school-finances/tables/2016/secondary-education-finance/elsec16t.xls
 - How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
-  - like this
+  - The U.S. Census Bureau as authorized by Title 13, United States Code, Section 161 and 182,
+  surveys every school in the United States, including Washington D.C., in order to collect
+  information on Education finance data include revenues, expenditures, debt, and assets [cash and security holdings] of elementary and secondary public school systems.
 - How many observations (rows) are in your data?
   - 14325
 - How many features (columns) are in the data?
@@ -63,7 +67,9 @@ Does educational spending have an impact juvenile crime rates?
   - https://www.census.gov/programs-surveys/school-finances/data/tables.html
   - https://www2.census.gov/programs-surveys/school-finances/tables/1997/secondary-education-finance/elsec97.xls
 - How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
-  - like this
+  - The U.S. Census Bureau as authorized by Title 13, United States Code, Section 161 and 182,
+  surveys every school in the United States, including Washington D.C., in order to collect
+  information on Education finance data include revenues, expenditures, debt, and assets [cash and security holdings] of elementary and secondary public school systems.
 - How many observations (rows) are in your data?
   - 15679
 - How many features (columns) are in the data?
@@ -71,26 +77,26 @@ Does educational spending have an impact juvenile crime rates?
 - What questions (from above) can be answered using the data in this dataset?
   - Again, the first three questions above can be answered using this dataset in conjunction with those from other years. This particular dataset allows us to see what U.S. education spending looked like in the early to mid range of the last 30 years, and increased funding for preschool education. With data on the value of the dollar, we can also see how this spending in 1997 relates to that of other years, and how changes compare to inflation.
 
-  ## cps_01_formatted.csv
-  - Where did you download the data (e.g., a web URL)?
-    - https://github.com/ecodan/school-shooting-data
-  - How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
-    - This data was compiled by GitHub user "ecodan" based on information from the [dataset underlying the Pah/Amaral/Hagan research](https://news.northwestern.edu/stories/2017/01/shootings-us-schools-link-unemployment) and a [Wikipedia article](https://en.wikipedia.org/wiki/School_shootings_in_the_United_States) on school shootings in the U.S. from 1990 to present. Pah compiled the first source by compiling previously-used data sets, reading reports on each incident of gun violence and establishing criteria for what constituted an incident. Wikipedia's list is compiled from various reports, added by various contributors. This particular dataset details the reported number of school shootings in the U.S., broken down by year and type of school (level and public vs. private.
+## cps_01_formatted.csv
+- Where did you download the data (e.g., a web URL)?
+  - https://github.com/ecodan/school-shooting-data
+- How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
+  - This data was compiled by GitHub user "ecodan" based on information from the [dataset underlying the Pah/Amaral/Hagan research](https://news.northwestern.edu/stories/2017/01/shootings-us-schools-link-unemployment) and a [Wikipedia article](https://en.wikipedia.org/wiki/School_shootings_in_the_United_States) on school shootings in the U.S. from 1990 to present. Pah compiled the first source by compiling previously-used data sets, reading reports on each incident of gun violence and establishing criteria for what constituted an incident. Wikipedia's list is compiled from various reports, added by various contributors. This particular dataset details the reported number of school shootings in the U.S., broken down by year and type of school (level and public vs. private.
+- How many observations (rows) are in your data?
+  - 64
+- How many features (columns) are in the data?
+  - 18
+- What questions (from above) can be answered using the data in this dataset?
+  - This dataset will help answer our fourth question, since it breaks down the number of reported school shootings by private vs. public school over 64 years.
+
+## Juvenile Arrests by Crime in the US
+
+  - This dataset is an [API](https://public.opendatasoft.com/explore/dataset/juvenile-arrests-by-crime-in-the-us/table/?dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQVZHIiwieUF4aXMiOiJjb3VudCIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6IiMyQzNGNTYifV0sInhBeGlzIjoieWVhciIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIiLCJjb25maWciOnsiZGF0YXNldCI6Imp1dmVuaWxlLWFycmVzdHMtYnktY3JpbWUtaW4tdGhlLXVzIiwib3B0aW9ucyI6e319fV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9)
+
+  - This dataset was collected by the Uniform Crime Reporting Program (URC). The arrests are by offense and categorized by age, sex, and sometimes race. The URC considers juveniles to be any individual under 18 years old. The years in this dataset range from 1995-2016.
   - How many observations (rows) are in your data?
-    - 64
+    - 1920
   - How many features (columns) are in the data?
-    - 18
+    - 4
   - What questions (from above) can be answered using the data in this dataset?
-    - This dataset will help answer our fourth question, since it breaks down the number of reported school shootings by private vs. public school over 64 years.
-
- ## Juvenile Arrests by Crime in the US
-
-    - This dataset is an [API](https://public.opendatasoft.com/explore/dataset/juvenile-arrests-by-crime-in-the-us/table/?dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQVZHIiwieUF4aXMiOiJjb3VudCIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6IiMyQzNGNTYifV0sInhBeGlzIjoieWVhciIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIiLCJjb25maWciOnsiZGF0YXNldCI6Imp1dmVuaWxlLWFycmVzdHMtYnktY3JpbWUtaW4tdGhlLXVzIiwib3B0aW9ucyI6e319fV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9)
-
-    - This dataset was collected by the Uniform Crime Reporting Program (URC). The arrests are by offense and categorized by age, sex, and sometimes race. The URC considers juveniles to be any individual under 18 years old. The years in this dataset range from 1995-2016.
-    - How many observations (rows) are in your data?
-      - 1920
-    - How many features (columns) are in the data?
-      - 4
-    - What questions (from above) can be answered using the data in this dataset?
-      - The last question can be answered by grouping this dataset and the education spending datasets by year. After this grouping the datasets can be joined and trends in educational spending and juvenile crime rates will be analyzed.    
+    - The last question can be answered by grouping this dataset and the education spending datasets by year. After this grouping the datasets can be joined and trends in educational spending and juvenile crime rates will be analyzed.    
