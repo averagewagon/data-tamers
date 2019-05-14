@@ -7,3 +7,5 @@ https://www.census.gov/govs/www/school06doc.html
 https://docs.google.com/spreadsheets/d/1_6rfhNPYU6VGcjIIimgotUtB_lkHGGWKoND25T-oc_w/edit?usp=sharing
 
 https://www.census.gov/govs/www/school06doc.html#layouts - Description of column names
+
+https://nces.ed.gov/ccd/f33agency.asp - full documentation of files
