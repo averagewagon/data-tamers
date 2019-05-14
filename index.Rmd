@@ -1,0 +1,23 @@
+---
+title: "Midpoint Deliverable"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+source("scripts/summary.R")
+```
+
+## Introduction
+
+## Summary (with 5 citations)
+
+## Table of aggregated data
+
+## Chart 1
+
+## Chart 2
+
+## Chart 3
+
