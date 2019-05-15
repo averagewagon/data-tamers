@@ -11,13 +11,28 @@ source("scripts/summary.R")
 
 ## Introduction
 
-## Summary (with 5 citations)
+For the domain of our project we are looking at Eduction with a focus on the financial background of schools over the years and how it has changed in response to different events and/or changes between geographical location or point in time.
+
+## Summary
+
+Some general information from this dataset ...
 
 ## Table of aggregated data
 
+This table is grouped by ...
+
 ## Chart 1
+
+This chart shows ... We decided to go with a ... chart because ...
 
 ## Chart 2
 
+This chart shows ... We decided to go with a ... chart because ...
+
 ## Chart 3
+
+This chart shows ... We decided to go with a ... chart because ...
+
+
+
 
