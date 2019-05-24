@@ -1,6 +1,8 @@
 # General setup
 library("dplyr")
-library("ggplot2")
-midpoint <- read.csv("data/midpoint.csv", stringsAsFactors = F)
+midpoint <- read.csv("data/funding/prepped/aggregate.csv", stringsAsFactors = F)
 
 # Create aggregate table
+summary_table <- function(df) {
+  
+}
