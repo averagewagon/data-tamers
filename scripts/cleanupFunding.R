@@ -2,7 +2,7 @@ library(dplyr)
 library(stringr)
 
 prepFrame <- function(file) {
-  df <- read.csv(paste("unprepped/", file, sep = ""), stringsAsFactors = FALSE)
+  df <- read.csv(paste("../data/funding/unprepped/", file, sep = ""), stringsAsFactors = FALSE)
   
   prepped <- na.exclude(df) %>% 
     filter(CCDNF == 1) %>% 
@@ -30,9 +30,9 @@ prepFrame <- function(file) {
   
   grouped = grouped[,c(12, 11, 3:10)]
   
-  write.csv(grouped, paste("./prepped/prep", file, sep = ""), row.names=FALSE)
+  write.csv(grouped, paste("../data/funding/prepped/prep", file, sep = ""), row.names=FALSE)
 }
 
-files = list.files(path = "./unprepped/")
+files = list.files(path = "../data/funding/unprepped/")
 
 lapply(files, prepFrame)
