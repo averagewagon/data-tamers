@@ -23,3 +23,4 @@ generateTrends <- function(filePath) {
     xlab('Years') +
     ylab('Revenue From Sources (thousands)')
 }
+

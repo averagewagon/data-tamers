@@ -6,7 +6,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
-source("scripts/summary.R")
+source("scripts/chart4.R")
 ```
 
 ## Introduction
@@ -40,7 +40,6 @@ Blue represents Federal funding
 Red represents State funding
 Green represents Local funding
 ```{r echo=FALSE}
-source("scripts/chart4.R")
 generateTrends("data/funding/prepped/aggregate.csv")
 ```
 
