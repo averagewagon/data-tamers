@@ -41,7 +41,12 @@ surplus_map("data/funding/prepped/aggregate.csv", 2000)
 
 ## Chart 3
 
-This chart shows ... We decided to go with a ... chart because ...
+This chart shows the difference between total revenue and expenditures for all schools grouped by year.
+The red bars represent the amount of debt and the green the amount of surplus.
+
+```{r echo=FALSE}
+divergingMap("scripts/summaryTable.R")
+```
 
 ## Chart 4
 
