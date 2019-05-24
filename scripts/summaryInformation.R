@@ -12,5 +12,4 @@ get_funding_summary_info <- function(dataset) {
     # 4. ____ = ____
     # 5. ____ = ____
   )
-  funding_sum
 }
