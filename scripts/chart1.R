@@ -2,7 +2,6 @@
 library("dplyr")
 library("ggplot2")
 
-
 generateTotalFunding <- function(filePath) {
   #setwd(getSrcDirectory()[1]) # Works when sourcing this file
   setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # Works when ran inside of this file
