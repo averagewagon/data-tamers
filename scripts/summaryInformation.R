@@ -6,7 +6,7 @@ library("ggplot2")
 
 get_funding_summary_info <- function(dataset) {
   funding_sum <- list(
-    num_districts = length(dataset)
+    num_years = length(dataset)
     # 2. ____ = ____
     # 3. ____ = ____
     # 4. ____ = ____
