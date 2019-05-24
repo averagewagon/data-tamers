@@ -37,7 +37,7 @@ generateTotalFunding("data/funding/prepped/aggregate.csv")
 
 ## Education Funding Surplus
 
-This chart shows the surplus in 2000 education funds for mainland U.S. states. We decided to go with a choropleth map because it gives a clear visualization of each state, allowing us to see trends over the country as a whole based on location. In addition, the color gradient makes it easy to see the range of surplus amount from positive to negative very easily at a glance.
+This chart shows the surplus in 2000 education funds for mainland U.S. states. We decided to go with a choropleth map because it gives a clear visualization of each state, also allowing us to see trends over the country as a whole based on location. In addition, the color gradient makes it easy to see the range of surplus amount among states from positive to negative very easily at a glance.
 
 ```{r echo=FALSE}
 surplus_map("data/funding/prepped/aggregate.csv", 2000)
@@ -45,12 +45,7 @@ surplus_map("data/funding/prepped/aggregate.csv", 2000)
 
 ## Chart 3
 
-This chart shows the difference between total revenue and expenditures for all schools grouped by year.
-The red bars represent the amount of debt and the green the amount of surplus.
-
-```{r echo=FALSE}
-divergingMap("scripts/summaryTable.R")
-```
+This chart shows ... We decided to go with a ... chart because ...
 
 ## Chart 4
 
