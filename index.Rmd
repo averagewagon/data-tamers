@@ -6,7 +6,8 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
-source("scripts/summary.R")
+source("scripts/chart1.R")
+source("scripts/chart4.R")
 ```
 
 ## Introduction
@@ -23,7 +24,11 @@ This table is grouped by ...
 
 ## Chart 1
 
-This chart shows ... We decided to go with a ... chart because ...
+This chart shows the progression of funding for schools since 1995 through 2015. We decided to go with a bar chart because of the simplicity of the informaiton that this chart would be showing.
+
+```{r echo=FALSE}
+generateTotalFunding("data/funding/prepped/aggregate.csv")
+```
 
 ## Chart 2
 
@@ -33,6 +38,15 @@ This chart shows ... We decided to go with a ... chart because ...
 
 This chart shows ... We decided to go with a ... chart because ...
 
+## Chart 4
+
+This chart shows the relationship between Federal, State, and Local funding for the country over the years.
+Blue represents Federal funding
+Red represents State funding
+Green represents Local funding
+```{r echo=FALSE}
+generateTrends("data/funding/prepped/aggregate.csv")
+```
 
 
 
