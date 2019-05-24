@@ -13,7 +13,11 @@ source("scripts/chart3.R")
 
 ## Introduction
 
-For the domain of our project we are looking at Eduction with a focus on the financial background of schools over the years and how it has changed in response to different events and/or changes between geographical location or point in time.
+For this project, we are looking at the domain of education with a focus on the financial characteristics of schools over the past twenty years and how they has differ over time and geographic location.
+
+To look into this, we are using compiled datasets from the U.S. Census Bureau as authorized by Title 13, United States Code, Section 161 and 182. Under this authorization, we are able to access surveys of every school in the United States, including Washington D.C., in order to collect information on education finance data such as revenue, expenditure, debt, and assets of elementary and secondary public school systems.
+
+We have used this information to provide a general overview and learn about aspects of it including [chart 1], [chart 2], [chart 3], and [chart 4].
 
 ## Summary
 
