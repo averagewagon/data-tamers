@@ -3,7 +3,7 @@ library("dyplr")
 library("ggplot2")
 
 # Draw the map showing state surplus amount
-surplus_map <- function(given_year) {
+surplus_map <- function(data_source, given_year) {
   # Load shapefile of U.S. states
   state_shape <- map_data("state")
   # Create a blank map of U.S. states
@@ -15,7 +15,7 @@ surplus_map <- function(given_year) {
     ) +
     coord_map()
   # Load funding data
-  funding_data <- funding_data(given_year)
+  funding_data <- funding_data(data_source, given_year)
   # Join eviction data to the U.S. shapefile
   state_shape <- map_data("state") %>%
     rename(state = region) %>%
@@ -45,8 +45,8 @@ surplus_map <- function(given_year) {
 }
 
 # Load state funding data for a given year
-funding_data <- function(given_year) {
-  read.csv("../data/funding/prepped/aggregate.csv", stringsAsFactors = F) %>%
+funding_data <- function(data_source, given_year) {
+  read.csv(data_source, stringsAsFactors = F) %>%
     filter(Year == given_year) %>%
     mutate(state = tolower(State.Name)) %>%
     mutate(surplus = Total.Revenue - Total.Expenditures)
