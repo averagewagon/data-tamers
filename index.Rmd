@@ -30,9 +30,13 @@ This chart shows the progression of funding for schools since 1995 through 2015.
 generateTotalFunding("data/funding/prepped/aggregate.csv")
 ```
 
-## Chart 2
+## Education Funding Surplus
 
-This chart shows ... We decided to go with a ... chart because ...
+This chart shows the surplus in 2000 education funds for mainland U.S. states. We decided to go with a choropleth map because it gives a clear visualization of each state, allowing us to see trends over the country as a whole based on location. In addition, the color gradient makes it easy to see the range of surplus amount from positive to negative very easily at a glance.
+
+```{r echo=FALSE}
+surplus_map("data/funding/prepped/aggregate.csv", 2000)
+```
 
 ## Chart 3
 
