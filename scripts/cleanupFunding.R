@@ -28,7 +28,8 @@ prepFrame <- function(file) {
     mutate("State Name" = STNAME) %>% 
     mutate("State Code" = STABBR)
   
-  grouped = grouped[,c(12, 11, 3:10)]
+  grouped["Year"] = substr(file, 2, 5)
+  grouped = grouped[,c(13, 12, 11, 3:10)]
   
   write.csv(grouped, paste("../data/funding/prepped/prep", file, sep = ""), row.names=FALSE)
 }
