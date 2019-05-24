@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
 source("scripts/chart1.R")
 source("scripts/chart4.R")
+source("scripts/chart3.R")
 ```
 
 ## Introduction
