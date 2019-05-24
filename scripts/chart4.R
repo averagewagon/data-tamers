@@ -3,14 +3,23 @@
 # General setup
 library("dplyr")
 library("ggplot2")
+library("utils")
 
 generateTrends <- function(filePath) {
+  #setwd(getSrcDirectory()[1]) # Works when sourcing this file
+  setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # Works when ran inside of this file
   midpoint <- read.csv(filePath, stringsAsFactors = FALSE)
-  
+  midpoint <- midpoint %>%
+    group_by(Year) %>%
+    summarize(
+      Federal.Revenue = sum(Federal.Revenue),
+      State.Revenue = sum(State.Revenue),
+      Local.Revenue = sum(Local.Revenue)
+    )
   ggplot() + 
-    geom_line(data = midpoint, aes(x = Year, y = "Total Federal Revenue"), color = "blue") +
-    geom_line(data = midpoint, aes(x = Year, y = "Total State Revenue"), color = "red") +
-    geom_line(data = midpoint, aes(x = Year, y = "Total Local Revenue"), color = "green") +
+    geom_point(data = midpoint, aes(x = Year, y = Federal.Revenue / 1000), color = "blue") +
+    geom_point(data = midpoint, aes(x = Year, y = State.Revenue / 1000), color = "red") +
+    geom_point(data = midpoint, aes(x = Year, y = Local.Revenue/ 1000), color = "green") +
     xlab('Years') +
-    ylab('Revenue From Sources')
+    ylab('Revenue From Sources (thousands)')
 }
