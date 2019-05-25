@@ -7,10 +7,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
 source("scripts/summaryTable.R")
+source("scripts/summaryInformation.R")
 source("scripts/chart1.R")
 source("scripts/chart2.R")
 source("scripts/chart3.R")
 source("scripts/chart4.R")
+df <- yearly("data/funding/prepped/aggregate.csv")
+info <- get_funding_summary_info(df)
 ```
 
 ## Introduction
@@ -23,7 +26,7 @@ We have used this information to provide a general overview and learn about aspe
 
 ## Summary
 
-Some general information from this dataset ...
+This data set tracks primary and secondary school funding over `r info$num_years`, from 1995 to 2016. In total, $`r info$total_revenue` has been supplied to schools from various sources; `r round(info$federal_cont, 2)`% has come from the federal government, `r round(info$state_cont, 2)`% has come from state governments, and `r round(info$local_cont, 2)`% has been supplied from local governments. On average, $`r info$average_salaries` has been spent on salaries for faculty and staff for each student across the whole time period.
 
 ## Table of Aggregated Data
 
