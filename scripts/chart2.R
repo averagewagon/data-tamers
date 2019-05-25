@@ -1,7 +1,7 @@
 # General setup
 library("dplyr")
 library("ggplot2")
-
+library("mapproj")
 # Draw the map showing state surplus amount
 surplus_map <- function(data_source, given_year) {
   # Load shapefile of U.S. states
