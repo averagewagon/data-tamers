@@ -1,7 +1,6 @@
 # Load libraries
 library("dplyr")
 library("ggplot2")
-source("summaryTable.R")
 
 # Read in summary table
 divergingMap <- function(df) {

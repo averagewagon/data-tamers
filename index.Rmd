@@ -6,10 +6,10 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
-#source("scripts/summaryTable.R")
+source("scripts/summaryTable.R")
 source("scripts/chart1.R")
 source("scripts/chart2.R")
-#source("scripts/chart3.R")
+source("scripts/chart3.R")
 source("scripts/chart4.R")
 ```
 
@@ -30,7 +30,7 @@ Some general information from this dataset ...
 This table is grouped by ...
 
 ```{r aggregated_data, include=FALSE}
-
+kable(yearly("data/funding/prepped/aggregate.csv"))
 ```
 
 ## USA Education Funding Over Time
@@ -49,17 +49,17 @@ This chart shows the surplus in 2000 education funds for mainland U.S. states. W
 surplus_map("data/funding/prepped/aggregate.csv", 2000)
 ```
 
-## Chart 3
+## Education Spending
+
+This chart shows the total education spending over the years, in terms of debt and surplus. We decided to go with a **...** chart because it **...**
 
 ```{r chart_3, echo=FALSE}
-
+divergingMap(yearly("data/funding/prepped/aggregate.csv"))
 ```
-
-This chart shows ... We decided to go with a ... chart because ...
 
 ## Funding Over Time, by Source
 
-This chart shows the relationship between Federal, State, and Local funding for the country over the years.
+This chart shows the relationship between Federal, State, and Local funding for the country over the years. We decided to go with a scatter plot for an easy comparison of each source which allows us to quickly see and compare how funding in each changed with each year.
 
 #### Source
 Blue - Federal Funding
