@@ -6,7 +6,6 @@ library("ggplot2")
 library("utils")
 
 generateTrends <- function(file_path) {
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
   midpoint <- read.csv(file_path, stringsAsFactors = FALSE)
   midpoint <- midpoint %>%
     group_by(Year) %>%

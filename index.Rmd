@@ -27,9 +27,9 @@ Some general information from this dataset ...
 
 ## Table of Aggregated Data
 
-This table is grouped by ...
+This table is grouped by year and shows the raw values for variables such as number of students, Total Revenue (and its breakdown from Federal, State, and Local sources), and Total Expenditures (Salaries and Teacher Saleries) for each year.
 
-```{r aggregated_data, include=FALSE}
+```{r aggregated_data, echo=FALSE}
 kable(yearly("data/funding/prepped/aggregate.csv"))
 ```
 
@@ -62,8 +62,11 @@ divergingMap(yearly("data/funding/prepped/aggregate.csv"))
 This chart shows the relationship between Federal, State, and Local funding for the country over the years. We decided to go with a scatter plot for an easy comparison of each source which allows us to quickly see and compare how funding in each changed with each year.
 
 #### Source
+
 Blue - Federal Funding
+
 Red - State Funding
+
 Green - Local Funding
 
 ```{r chart_4, echo=FALSE}
