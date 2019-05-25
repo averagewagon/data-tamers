@@ -30,7 +30,7 @@ Some general information from this dataset ...
 This table is grouped by ...
 
 ```{r aggregated_data, include=FALSE}
-yearly("data/funding/prepped/aggregate.csv")
+kable(yearly("data/funding/prepped/aggregate.csv"))
 ```
 
 ## USA Education Funding Over Time
