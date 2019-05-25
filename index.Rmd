@@ -60,9 +60,11 @@ This chart shows ... We decided to go with a ... chart because ...
 ## Funding Over Time, by Source
 
 This chart shows the relationship between Federal, State, and Local funding for the country over the years.
-Blue represents Federal funding
-Red represents State funding
-Green represents Local funding
+
+#### Source
+Blue - Federal Funding
+Red - State Funding
+Green - Local Funding
 
 ```{r chart_4, echo=FALSE}
 generateTrends("data/funding/prepped/aggregate.csv")
