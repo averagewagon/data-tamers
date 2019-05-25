@@ -19,7 +19,7 @@ For this project, we are looking at the domain of education with a focus on the 
 
 To look into this, we are using compiled datasets from the U.S. Census Bureau as authorized by Title 13, United States Code, Section 161 and 182. Under this authorization, we are able to access surveys of every school in the United States, including Washington D.C., in order to collect information on education finance data such as revenue, expenditure, debt, and assets of elementary and secondary public school systems.
 
-We have used this information to provide a general overview and learn about aspects of it including [chart 1], [chart 2], [chart 3], and [chart 4].
+We have used this information to provide a general overview and learn about aspects of it including education funding for the country over time, how much surplus or over-use states had, **[chart 3]**, and the breakdown in funding by source.
 
 ## Summary
 
