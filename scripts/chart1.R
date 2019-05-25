@@ -11,6 +11,9 @@ generateTotalFunding <- function(file_path) {
     summarize(Total.Revenue = sum(Total.Revenue))
   ggplot() +
     geom_col(data = midpoint, aes(x = Year, y = Total.Revenue / 1000)) +
-    xlab("Year") +
-    ylab("Total Revenue (thousands)")
+    labs(
+      title = "USA Education Funding Over Time",
+      x = "Year",
+      y = "Total Revenue ($K)"
+    )
 }
