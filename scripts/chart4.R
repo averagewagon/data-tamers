@@ -26,7 +26,6 @@ generateTrends <- function(file_path) {
     labs(
       title = "Funding Over Time",
       x = "Years",
-      y = "Revenue ($K)",
-      color = "Source"
+      y = "Revenue ($K)"
     )
 }
