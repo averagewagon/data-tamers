@@ -6,10 +6,10 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
-source("scripts/summaryTable.R")
+#source("scripts/summaryTable.R")
 source("scripts/chart1.R")
 source("scripts/chart2.R")
-source("scripts/chart3.R")
+#source("scripts/chart3.R")
 source("scripts/chart4.R")
 ```
 
