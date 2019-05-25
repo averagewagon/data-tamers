@@ -6,8 +6,9 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
+source("scripts/summaryTable.R")
 source("scripts/chart1.R")
-source("scripts/chart4.R")
+source("scripts/chart2.R")
 source("scripts/chart3.R")
 source("scripts/chart4.R")
 ```
@@ -29,12 +30,7 @@ Some general information from this dataset ...
 This table is grouped by ...
 
 ```{r aggregated_data, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(knitr)
-source("scripts/chart1.R")
-source("scripts/chart4.R")
-source("scripts/chart3.R")
-source("scripts/chart4.R")
+
 ```
 
 ## USA Education Funding Over Time

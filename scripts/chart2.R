@@ -1,5 +1,5 @@
 # General setup
-library("dyplr")
+library("dplyr")
 library("ggplot2")
 
 # Draw the map showing state surplus amount

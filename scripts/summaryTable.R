@@ -2,10 +2,10 @@
 library("dplyr")
 library("ggplot2")
 
-aggregated <- read.csv("../data/funding/prepped/aggregate.csv", stringsAsFactors = FALSE)
-
-yearly <- aggregated %>% 
-  group_by(Year) %>% 
+aggregated <- read.csv("../data/funding/prepped/aggregate.csv",
+                       stringsAsFactors = FALSE)
+yearly <- aggregated %>%
+  group_by(Year) %>%
   summarise("Students" = sum(Students),
             "Total Revenue" = sum(Total.Revenue),
             "Federal Revenue" = sum(Federal.Revenue),
