@@ -67,6 +67,3 @@ Green represents Local funding
 ```{r chart_4, echo=FALSE}
 generateTrends("data/funding/prepped/aggregate.csv")
 ```
-
-
-

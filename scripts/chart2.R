@@ -29,13 +29,10 @@ surplus_map <- function(data_source, given_year) {
   ) +
   coord_map() +
   scale_fill_continuous(low = "Red", high = "Yellow") +
-    labs(
-      title = "Percent College Educated versus Poverty Rates", # plot title
-      x = "Percentage of College Educated Adults", # x-axis label
-      y = "Percentage of Adults Living in Poverty", # y-axis label
-      color = "Urbanity" # legend label for the "color" property
-    )
-  labs(fill = paste(given_year, "Surplus ($)")) +
+  labs(
+    title = paste(given_year, "Education Funding"),
+    fill = "Surplus ($)"
+  ) +
   # Add a minimalist theme
   theme_bw() +
   theme(

@@ -23,7 +23,10 @@ generateTrends <- function(file_path) {
                color = "red") +
     geom_point(data = midpoint, aes(x = Year, y = Local.Revenue / 1000),
                color = "green") +
-    xlab("Years") +
-    ylab("Revenue From Sources (thousands)") +
-    gather(key = race, value = population, -state)
+    labs(
+      title = "Funding Over Time",
+      x = "Years",
+      y = "Revenue ($K)",
+      color = "Source"
+    )
 }
