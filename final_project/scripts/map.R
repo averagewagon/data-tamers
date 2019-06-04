@@ -15,7 +15,12 @@ surplus_map <- function(given_year, given_metric) {
     ) +
     coord_map()
   # Load funding data
-  funding_data <- read.csv("../data/funding/prepped/aggregate.csv", stringsAsFactors = F) %>%
+  intermediate_df <- read.csv("data/funding/prepped/aggregate.csv", stringsAsFactors = F)
+  col <- intermediate_df[[given_metric]]
+  max <- max(col)
+  min <- min(col)
+  
+  funding_data <- intermediate_df %>%
     filter(Year == given_year) %>%
     mutate(state = tolower(State.Name))
   funding_data$observation <- funding_data[[given_metric]]
@@ -31,7 +36,7 @@ surplus_map <- function(given_year, given_metric) {
       size = .1
     ) +
     coord_map() +
-    scale_fill_continuous(low = "Red", high = "Yellow") +
+    scale_fill_viridis_c(limits = c(min, max)) +
     labs(
       fill = "Revenue/Expenditure ($)"
     ) +
