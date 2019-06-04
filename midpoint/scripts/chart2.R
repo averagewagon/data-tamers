@@ -20,10 +20,11 @@ surplus_map <- function(data_source, given_year) {
   state_shape <- map_data("state") %>%
     rename(state = region) %>%
     left_join(funding_data, by = "state")
+  View(state_shape) #deleteme
   # Fill in the map
   ggplot(state_shape) +
   geom_polygon(
-    mapping = aes(x = long, y = lat, group = group, fill = surplus),
+    mapping = aes(x = long, y = lat, group = group, fill = surplus), # @A - change surplus to new column name
     color = "white",
     size = .1
   ) +
@@ -52,5 +53,8 @@ funding_data <- function(data_source, given_year) {
   read.csv(data_source, stringsAsFactors = F) %>%
     filter(Year == given_year) %>%
     mutate(state = tolower(State.Name)) %>%
-    mutate(surplus = Total.Revenue - Total.Expenditures)
+    mutate(surplus = Total.Revenue - Total.Expenditures) 
+  # @A - Change surplus to a more generic name
+  # @A - change the expression to a function of a column
 }
+
