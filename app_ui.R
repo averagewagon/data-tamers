@@ -358,12 +358,12 @@ summary_sidebar_content <- sidebarPanel(
 
 summary_main_content <- mainPanel(
   h4("What are we taking away from this project?"),
-  p("Among the different metrics there were many interesting things that happend over the two decades we
-    had available. The data that we have doesn't help us to explain why these different events occurred
-    such as in 2010, why was there a spike in federal funding towards schools across the board, or why
-    did some states dip down in certain funding modes in a single year. Earlier on in the project we
-    wanted to evaluate the trends in funding and see what historical events (i.e. columbine, bills/laws,
-    etc.) could have had an effect on the trends themselves."),
+  p("Among the different metrics, 
+    there were many interesting things that 
+    happened over the two decades we had available.
+    The data showed there was a spike in federal funding
+    for schools across the board in 2010. Some states
+    lost funding for one of the various sources in a single year."),
   p(""),
   p("")
 )
