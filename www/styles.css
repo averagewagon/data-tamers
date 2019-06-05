@@ -1,0 +1,25 @@
+#fh3 {
+  font-size: 20pt;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+#main {
+  font-size: 14pt;
+}
+
+#wrapper > div {
+  width: 50%;
+}
+
+#wrapper img {
+  width: 100%;
+}
+
+#wrapper em {
+  text-align: right;
+}

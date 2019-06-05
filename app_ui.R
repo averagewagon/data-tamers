@@ -8,20 +8,20 @@ library(shinythemes)
 
 # Overview sidebar
 overview_panel <- mainPanel(
-  h4("The Data Tamers' Group Project"),
+  h4(id = "fh4", "The Data Tamers' Group Project"),
   
   tags$hr(),
   
+  h3(id = "fh3", "The Data Set"),
   
-  HTML("
-        <hr>
-        <h3 style=\"font-size: 20pt\">The Data Set</h3>
-        <div
-style=\"display:flex;justify-content:space-evenly;align-items:flex-start;\">
-        <div style=\"width:50%;font-size:14pt;\">
-        <p>
-          <a href=\"https://nces.ed.gov/ccd/f33agency.asp\">
-          <strong>The data set</strong></a> this project centers around
+  div(id = "wrapper",
+    div(id = "main",
+      p(
+        tags$a(
+          href = "https://nces.ed.gov/ccd/f33agency.asp",
+          tags$strong("The data set")
+        ),
+        "this project centers around
           is the data from the \"Local Education Agency (School District)
           Finance Survey\", also known as
           survey F-33. This survey is conducted yearly by the federal 
@@ -30,30 +30,32 @@ style=\"display:flex;justify-content:space-evenly;align-items:flex-start;\">
           and other monetary figures for all primary
           and secondary schools. Each school district in the entirety 
           of the USA is represented. For our analysis, we used 
-          the publicly released data, which spans from 1995 up to 2016.
-        </p>
-        <p>
-          To look at the data, we are using compiled datasets 
+          the publicly released data, which spans from 1995 up to 2016."
+      ),
+      
+      p("To look at the data, we are using compiled datasets 
           from the U.S. Census Bureau as authorized
           by Title 13, United States Code, Section 161 and 182. 
           Due to the large volume of data, we narrowed our analysis down to
           columns for funding sources, salaries, and basic expenditures, and
-          the data are grouped by state.
-        </p>
-        <p>
-          Since the population in each state varies widely, our data is
-          normalized according to student counts. <strong>A unit of money 
-          in this data set is not measured in USD, 
-          but instead USD per student.</strong>
-        </p>
-        </div>
-        <div style=\"width:50%;\">
-        <img src=\"federalrevenue.gif\" style=\"width:100%;\">
-        <p style=\"text-align:right;\">Pictured: Federal 
-        primary/secondary school funding from 1995 to 2016.</p>
-        </div>
-        </div>
-       ")
+          the data are grouped by state."),
+      
+      p("Since the population in each state varies widely, our data is
+        normalized according to student counts.",
+        
+        tags$strong(" A unit of money 
+        in this data set is not measured in USD, 
+        but instead USD per student.")
+        
+        
+      )
+    ),
+    
+    div(
+      tags$img(src = "federalrevenue.gif", width = "100%"),
+      tags$em("Federal primary/secondary school funding from 1995 to 2016.")
+    )
+  )
 )
 
 overview_sidebar_panel <- sidebarPanel(
@@ -291,5 +293,8 @@ ui <- navbarPage(
   bar_panel,
   div_panel,
   summary_panel,
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css")
+  ),
   theme = shinytheme("united")
 )
