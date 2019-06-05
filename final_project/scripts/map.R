@@ -1,9 +1,11 @@
 # General setup
 library("dplyr")
 library("ggplot2")
+library(stringr)
 
 # Draw the map showing state surplus amount
 surplus_map <- function(given_year, given_metric) {
+  altered_metric = str_replace(given_metric, " ", ".")
   # Load shapefile of U.S. states
   state_shape <- map_data("state")
   # Create a blank map of U.S. states
@@ -16,14 +18,14 @@ surplus_map <- function(given_year, given_metric) {
     coord_map()
   # Load funding data
   intermediate_df <- read.csv("data/funding/prepped/aggregate.csv", stringsAsFactors = F)
-  col <- intermediate_df[[given_metric]]
+  col <- intermediate_df[[altered_metric]]
   max <- max(col)
   min <- min(col)
   
   funding_data <- intermediate_df %>%
     filter(Year == given_year) %>%
     mutate(state = tolower(State.Name))
-  funding_data$observation <- funding_data[[given_metric]]
+  funding_data$observation <- funding_data[[altered_metric]]
   # Join eviction data to the U.S. shapefile
   state_shape <- map_data("state") %>%
     rename(state = region) %>%
@@ -38,7 +40,8 @@ surplus_map <- function(given_year, given_metric) {
     coord_map() +
     scale_fill_viridis_c(limits = c(min, max)) +
     labs(
-      fill = "Revenue/Expenditure ($)"
+      fill = "Revenue/Expenditure ($)",
+      title = paste(given_metric, "in", given_year)
     ) +
     # Add a minimalist theme
     theme_bw() +

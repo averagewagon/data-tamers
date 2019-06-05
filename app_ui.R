@@ -50,13 +50,13 @@ map_sidebar_content <- sidebarPanel(
     "map_metric",
     label = "Statistic",
     choices = list(
-      "Total Revenue" = "Total.Revenue",
-      "Federal Revenue" = "Federal.Revenue",
-      "State Revenue" = "State.Revenue",
-      "Local Revenue" = "Local.Revenue",
-      "Total Expenditures" = "Total.Expenditures",
+      "Total Revenue" = "Total Revenue",
+      "Federal Revenue" = "Federal Revenue",
+      "State Revenue" = "State Revenue",
+      "Local Revenue" = "Local Revenue",
+      "Total Expenditures" = "Total Expenditures",
       "Salaries" = "Salaries",
-      "Teacher Revenue" = "Teacher.Revenue",
+      "Teacher Revenue" = "Teacher Revenue",
       "Students" = "Students"
     ),
     selected = "Total Revenue"
@@ -85,45 +85,88 @@ map_panel <- tabPanel(
 
 # Sidebar for the population information page
 bar_sidebar_content <- sidebarPanel(
+  sliderInput(
+    "bar_year",
+    label = "Year",
+    min = 1995,
+    max = 2016,
+    value = 1995,
+    step = 1
+  ),
+  
   # Select dropdown for which state to display
   selectInput(
     "state",
     label = "State",
     choices = list(
+      "USA" = "USA",
+      "Alabama" = "AL",
+      "Alaska" = "AK",
+      "Arizona" = "AZ",
+      "Arkansas" = "AR",
+      "California" = "CA",
+      "Colorado" = "CO",
+      "Connecticut" = "CT",
+      "Delaware" = "DE",
+      "Florida" = "FL",
+      "Georgia" = "GA",
+      "Hawaii" = "HI",
+      "Idaho" = "ID",
       "Illinois" = "IL",
       "Indiana" = "IN",
+      "Iowa" = "IA",
+      "Kansas" = "KS",
+      "Kentucky" = "KY",
+      "Louisiana" = "LA",
+      "Maine" = "ME",
+      "Maryland" = "MD",
+      "Massachusetts" = "MA",
       "Michigan" = "MI",
+      "Minnesota" = "MN",
+      "Mississippi" = "MS",
+      "Missouri" = "MO",
+      "Montana" = "MT",
+      "Nebraska" = "NE",
+      "Nevada" = "NV",
+      "New Hampshire" = "NH",
+      "New Jersey" = "NJ",
+      "New Mexico" = "NM",
+      "New York" = "NY",
+      "North Carolina" = "NC",
+      "North Dakota" = "ND",
       "Ohio" = "OH",
-      "Wisconsin" = "WI"
+      "Oklahoma" = "OK",
+      "Oregon" = "OR",
+      "Pennsylvania" = "PA",
+      "Rhode Island" = "RI",
+      "South Carolina" = "SC",
+      "South Dakota" = "SD",
+      "Tennessee" = "TN",
+      "Texas" = "TX",
+      "Utah" = "UT",
+      "Vermont" = "VT",
+      "Virginia" = "VA",
+      "Washington" = "WA",
+      "West Virginia" = "WV",
+      "Wisconsin" = "WI",
+      "Wyoming" = "WY",
+      "District of Columbia" = "DC"
     ),
-    selected = "Illinois"
-  ),
-
-  # Radio Buttons for the population information
-  radioButtons(
-    "pop",
-    label = "Type of Population",
-    choices = list(
-      "Population" = "Population",
-      "Adults" = "Adults",
-      "Children" = "Children",
-      "Population Density" = "Population Density"
-    ),
-    selected = "Population"
+    selected = "USA"
   )
 )
 
 # the Main Panel, which holds the graph for population
 bar_main_content <- mainPanel(
-  
+  #plotOutput("bar", height = "800px")
 )
 
 # populations tab panel, which has the pops sidebar and main content.
 bar_panel <- tabPanel(
-  "Population by County",
+  "Comparing Funding in a Single Year",
 
   # Title for the pops panel
-  titlePanel("Population in one state"),
+  titlePanel("Comparing Funding in a Single Year"),
 
   # Sidebar layout
   sidebarLayout(
@@ -138,7 +181,7 @@ bar_panel <- tabPanel(
 
 # Final UI definition
 ui <- navbarPage(
-  "Midwest Population",
+  "Primary/Seconday School Funding",
   overview_page,
   map_panel,
   bar_panel
