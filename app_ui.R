@@ -344,7 +344,13 @@ div_panel <- tabPanel(
 summary_sidebar_content <- sidebarPanel(
   h4("Takeaways"),
   tags$ul(
-    tags$li(""),
+    tags$li("Public schools in most states operate
+            with a financial deficit. There are very
+            few exceptions, states such as Connecticut
+            which only has debt for 2010. Leaving the
+            schools to borrow from banks, issue bonds,
+            and teachers often pay for supplies for their 
+            classes."),
     tags$li(""),
     tags$li("")
   )
