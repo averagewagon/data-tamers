@@ -46,6 +46,7 @@ surplus_map <- function(given_year, given_metric) {
     # Add a minimalist theme
     theme_bw() +
     theme(
+      plot.title = element_text(size = 24, face = "bold"),
       axis.line = element_blank(),
       axis.text = element_blank(),
       axis.ticks = element_blank(),

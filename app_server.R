@@ -2,6 +2,7 @@
 # server.R
 library(dplyr)
 library(ggplot2)
+library(shinythemes)
 
 # Read in tools for making charts
 source("final_project/scripts/map.R")

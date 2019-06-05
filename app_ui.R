@@ -2,32 +2,57 @@
 # ui.R
 library(shiny)
 library(plotly)
+library(shinythemes)
 
 # ==== Overview ====
 
 # Overview sidebar
 overview_panel <- mainPanel(
-  HTML("<h2>The Data Tamers' Group Project</h2>
-        <hr><hr>
-        <h3>The Data Set</h3>
+  h4("The Data Tamers' Group Project"),
+  
+  tags$hr(),
+  
+  
+  HTML("
+        <hr>
+        <h3 style=\"font-size: 20pt\">The Data Set</h3>
+        <div
+style=\"display:flex;justify-content:space-evenly;align-items:flex-start;\">
+        <div style=\"width:50%;font-size:14pt;\">
         <p>
-          For this project, we are looking at the domain of education with a focus on the financial<br>
-          characteristics of schools over the past twenty years and how they has differ over time<br>
-          and geographic location.
+          <a href=\"https://nces.ed.gov/ccd/f33agency.asp\">
+          <strong>The data set</strong></a> this project centers around
+          is the data from the \"Local Education Agency (School District)
+          Finance Survey\", also known as
+          survey F-33. This survey is conducted yearly by the federal 
+          government of the USA, and aggregates information
+          on salaries, debt, student numbers, funding, expenditures, 
+          and other monetary figures for all primary
+          and secondary schools. Each school district in the entirety 
+          of the USA is represented. For our analysis, we used 
+          the publicly released data, which spans from 1995 up to 2016.
         </p>
         <p>
-          To look into this, we are using compiled datasets from the U.S. Census Bureau as authorized<br>
-          by Title 13, United States Code, Section 161 and 182. Under this authorization, we are able<br>
-          to access surveys of every school in the United States, including Washington D.C., in order<br>
-          to collect information on education finance data such as revenue, expenditure, debt, and<br>
-          assets of elementary and secondary public school systems.
+          To look at the data, we are using compiled datasets 
+          from the U.S. Census Bureau as authorized
+          by Title 13, United States Code, Section 161 and 182. 
+          Due to the large volume of data, we narrowed our analysis down to
+          columns for funding sources, salaries, and basic expenditures, and
+          the data are grouped by state.
         </p>
         <p>
-          When we started this project we decided to dive into education data with the hopes of seeing<br>
-          how time, geography, and social/political/historical events affected the data. Even though<br>
-          we found data to suppart us on this journey (student incarceration data and school<br>
-          shootings data) we got too enveloped within the mass amount of financial data we gathered.
+          Since the population in each state varies widely, our data is
+          normalized according to student counts. <strong>A unit of money 
+          in this data set is not measured in USD, 
+          but instead USD per student.</strong>
         </p>
+        </div>
+        <div style=\"width:50%;\">
+        <img src=\"federalrevenue.gif\" style=\"width:100%;\">
+        <p style=\"text-align:right;\">Pictured: Federal 
+        primary/secondary school funding from 1995 to 2016.</p>
+        </div>
+        </div>
        ")
 )
 
@@ -76,8 +101,7 @@ map_sidebar_content <- sidebarPanel(
       "Local Revenue" = "Local Revenue",
       "Total Expenditures" = "Total Expenditures",
       "Salaries" = "Salaries",
-      "Teacher Revenue" = "Teacher Revenue",
-      "Students" = "Students"
+      "Teacher Revenue" = "Teacher Revenue"
     ),
     selected = "Total Revenue"
   )
@@ -266,5 +290,6 @@ ui <- navbarPage(
   map_panel,
   bar_panel,
   div_panel,
-  summary_panel
+  summary_panel,
+  theme = shinytheme("united")
 )
