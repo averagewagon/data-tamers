@@ -1,8 +1,5 @@
 # File inspired by Chapter 19 Exercise 7 app_server.R
 # server.R
-library(dplyr)
-library(ggplot2)
-library(shinythemes)
 
 # Read in tools for making charts
 source("final_project/scripts/map.R")

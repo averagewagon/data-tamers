@@ -33,6 +33,8 @@ overview_panel <- mainPanel(
           the publicly released data, which spans from 1995 up to 2016."
       ),
       
+      tags$hr(),
+      
       p("To look at the data, we are using compiled datasets 
           from the U.S. Census Bureau as authorized
           by Title 13, United States Code, Section 161 and 182. 
@@ -40,14 +42,17 @@ overview_panel <- mainPanel(
           columns for funding sources, salaries, and basic expenditures, and
           the data are grouped by state."),
       
+      tags$hr(),
+      
       p("Since the population in each state varies widely, our data is
         normalized according to student counts.",
         
         tags$strong(" A unit of money 
         in this data set is not measured in USD, 
-        but instead USD per student.")
+        but instead USD per student."),
         
-        
+        " There are numerous interesting trends that arise in this data set,
+        but we chose to focus on a few key insights for this analysis."
       )
     ),
     
@@ -208,7 +213,14 @@ bar_sidebar_content <- sidebarPanel(
       "District of Columbia" =  "District Of Columbia"
     ),
     selected = "AL"
-  )
+  ),
+  
+  tags$br(),
+  
+  p("This chart shows how total revenue of a given state compares with
+   the total expenditures of that state over the years. Notably, nearly
+   every state spends more than their revenue most years, meaning that they accrue
+   debt.")
 )
 
 # the Main Panel, which holds the graph for population
@@ -294,7 +306,16 @@ div_sidebar_content <- sidebarPanel(
       "District of Columbia" =  "District Of Columbia"
     ),
     selected = "AL"
-  )
+  ),
+  
+  tags$br(),
+  
+  p("This chart displays the various divisions of funds for a single state.
+    Notably, the federal government contributes the least out to primary
+    and secondary schools out of any funding institution. As for funding,
+    the USA is split between receiving the majority of primary/secondary
+    school funding from state governments and from local sources. The 
+    local ")
 )
 
 div_main_content <- mainPanel(
@@ -303,7 +324,7 @@ div_main_content <- mainPanel(
 
 # populations tab panel, which has the pops sidebar and main content.
 div_panel <- tabPanel(
-  "Diverging Bar Chart",
+  "Debt and Surplus",
   
   # Title for the pops panel
   titlePanel("Debt Calculations"),
