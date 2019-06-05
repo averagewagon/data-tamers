@@ -2,6 +2,7 @@
 library("dplyr")
 library("ggplot2")
 library(stringr)
+library(mapproj)
 
 # Draw the map showing state surplus amount
 surplus_map <- function(given_year, given_metric) {
