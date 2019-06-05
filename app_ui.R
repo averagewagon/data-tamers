@@ -106,6 +106,14 @@ map_sidebar_content <- sidebarPanel(
       "Teacher Salaries" = "Teacher Salaries"
     ),
     selected = "Total Revenue"
+  ),
+  tags$ul(
+    "Insights from the graph:",
+    tags$li("Earlier on the total revenue for the country seemed to move relatively uniformly
+            until the northeast and Wyoming shot ahead of the other states."),
+    tags$li("Somewhere around 2010 there was a big spike in funding from federal resources. Aside
+            from Nevada and Colorado, all of the states visually brighten on the graph then dampens
+            back down after 2010 passes.")
   )
 
 )
@@ -314,11 +322,24 @@ div_panel <- tabPanel(
 # ==== Summary ====
 
 summary_sidebar_content <- sidebarPanel(
-  
+  h4("Takeaways"),
+  tags$ul(
+    tags$li(""),
+    tags$li(""),
+    tags$li("")
+  )
 )
 
 summary_main_content <- mainPanel(
-  
+  h4("What are we taking away from this project?"),
+  p("Among the different metrics there were many interesting things that happend over the two decades we
+    had available. The data that we have doesn't help us to explain why these different events occurred
+    such as in 2010, why was there a spike in federal funding towards schools across the board, or why
+    did some states dip down in certain funding modes in a single year. Earlier on in the project we
+    wanted to evaluate the trends in funding and see what historical events (i.e. columbine, bills/laws,
+    etc.) could have had an effect on the trends themselves."),
+  p(""),
+  p("")
 )
 
 # populations tab panel, which has the pops sidebar and main content.
