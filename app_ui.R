@@ -314,8 +314,7 @@ div_sidebar_content <- sidebarPanel(
     Notably, the federal government contributes the least out to primary
     and secondary schools out of any funding institution. As for funding,
     the USA is split between receiving the majority of primary/secondary
-    school funding from state governments and from local sources. The 
-    local ")
+    school funding from state governments and from local sources.")
 )
 
 div_main_content <- mainPanel(
