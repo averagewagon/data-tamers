@@ -67,12 +67,18 @@ overview_sidebar_panel <- sidebarPanel(
   h3("The Questions"),
 
   tags$ul(
-    tags$li("Over the 20 year period, how do the different
-            metric change across the states?"),
+    tags$li("Are states given the same priority by the federal
+            government for funding? What is the significance of
+            the years where the federal government significantly
+            increased its education contribution?"),
     tags$li("Which states went into debt over the
-            different years?"),
-    tags$li("What is the distribution of each metric for
-            each state for a given year?")
+            different years? Does a state going into debt correlate
+            with certain local or national events?"),
+    tags$li("Where does school funding mainly come from? Which states
+            receive more funding from local sources, and which states
+            receive more funding from the state government? Does this
+            correspond with state wealth or the frequency of private
+            schools?")
   )
 )
 
