@@ -196,11 +196,19 @@ bar_sidebar_content <- sidebarPanel(
       "Washington",
       "West Virginia",
       "Wisconsin",
-      "Wyoming",
-      "District of Columbia" =  "District Of Columbia"
+      "Wyoming"
     ),
     selected = "AL"
-  )
+  ),
+  
+  tags$br(),
+  
+  p("This chart displays the various divisions of funds for a single state.
+    Notably, the federal government contributes the least out to primary
+    and secondary schools out of any funding institution. As for funding,
+    the USA is split between receiving the majority of primary/secondary
+    school funding from state governments and from local sources. The 
+    local ")
 )
 
 # the Main Panel, which holds the graph for population
@@ -282,18 +290,24 @@ div_sidebar_content <- sidebarPanel(
       "Washington",
       "West Virginia",
       "Wisconsin",
-      "Wyoming",
-      "District of Columbia" =  "District Of Columbia"
+      "Wyoming"
     ),
     selected = "AL"
-  )
+  ),
+  
+  tags$br(),
+  
+  p("This chart shows how total revenue of a given state compares with
+    the total expenditures of that state over the years. Notably, nearly
+    every state spends more than their revenue most years, meaning that they accrue
+    debt.")
 )
 
 div_main_content <- mainPanel(
   plotOutput("div", height = "800px")
 )
 
-# populations tab panel, which has the pops sidebar and main content.
+# Diverging bar chart for debt
 div_panel <- tabPanel(
   "Diverging Bar Chart",
   
