@@ -367,8 +367,8 @@ summary_sidebar_content <- sidebarPanel(
             schools to borrow from banks, issue bonds,
             and teachers often pay for supplies for their
             classes."),
-    tags$li("States alternate between having more state funding or
-            more local funding for schools while federal funding always
+    tags$li("States are indeterminate as to which have more state funding or
+            more local funding for schools, while federal funding always
             comes in as the smallest fraction funding."),
     tags$li("Just about every state consistently goes into debt during the
             school year and has been since '95.")
@@ -381,10 +381,22 @@ summary_main_content <- mainPanel(
     there were many interesting things that
     happened over the two decades we had available.
     The data showed there was a spike in federal funding
-    for schools across the board in 2010. Some states
-    lost funding for one of the various sources in a single year."),
-  p(""),
-  p("")
+    for schools across the board in 2010. This corresponds with
+    the Recovery Act of 2009, which was a federal stimulus
+    act passed by President Obama which temporarily increased
+    their school funding."),
+  p("Overall, funding has been on a steady rise, which is to be
+    expected due to inflation. For the most part, funding is rising
+    at a fairly even rate across the United States. However, some states,
+    such as Idaho, Utah, and North Carolina, barely saw changes in their
+    education funding since 1995."),
+  p("Some states, like Connecticut, Ohio, and Hawaii, consistently end
+    the years with surplus, rather than spending more than they receive
+    from their main funding sources. However, not going into debt doesn't
+    necessarily mean a state is better off. Many states, such as Washington
+    and New York, consistently go into debt over their schools. This could
+    be interpreted as those states maximizing possible funding resources
+    in order to invest in the future of the students they teach.")
 )
 
 # populations tab panel, which has the pops sidebar and main content.
