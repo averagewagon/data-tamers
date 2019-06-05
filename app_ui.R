@@ -115,6 +115,8 @@ map_sidebar_content <- sidebarPanel(
     ),
     selected = "Total Revenue"
   ),
+  p("This heatmap-like chart shows how different metrics differ between states
+    over each year from '95 to '16"),
   tags$ul(
     "Insights from the graph:",
     tags$li("Earlier on the total revenue for
@@ -224,10 +226,12 @@ bar_sidebar_content <- sidebarPanel(
 
   tags$br(),
 
-  p("This chart shows how total revenue of a given state compares with
-   the total expenditures of that state over the years. Notably, nearly
-   every state spends more than their revenue most years,
-   meaning that they accrue debt.")
+  p("This chart displays the various divisions of funds and expenditures for
+    a single state. Notably, the federal government contributes the least
+    out to primary and secondary schools out of any funding institution. As
+    for funding, the USA is split between receiving the majority of
+    primary/secondary school funding from state governments and from local
+    sources.")
 )
 
 # the Main Panel, which holds the graph for population
@@ -317,11 +321,10 @@ div_sidebar_content <- sidebarPanel(
 
   tags$br(),
 
-  p("This chart displays the various divisions of funds for a single state.
-    Notably, the federal government contributes the least out to primary
-    and secondary schools out of any funding institution. As for funding,
-    the USA is split between receiving the majority of primary/secondary
-    school funding from state governments and from local sources.")
+  p("This chart shows how total revenue of a given state compares with
+   the total expenditures of that state over the years. Notably, nearly
+    every state spends more than their revenue most years,
+    meaning that they accrue debt.")
 )
 
 div_main_content <- mainPanel(
@@ -358,8 +361,11 @@ summary_sidebar_content <- sidebarPanel(
             schools to borrow from banks, issue bonds,
             and teachers often pay for supplies for their
             classes."),
-    tags$li(""),
-    tags$li("")
+    tags$li("States alternate between having more state funding or
+            more local funding for schools while federal funding always
+            comes in as the smallest fraction funding."),
+    tags$li("Just about every state consistently goes into debt during the
+            school year and has been since '95.")
   )
 )
 
