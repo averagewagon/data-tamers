@@ -29,5 +29,4 @@ divergingMap <- function(df,state) {
     labs(title = "Educationl Spending By State", y = "Spending Amount") +
     coord_flip()
 }
-df <- read.csv("aggregate.csv", stringsAsFactors = F)
-divergingMap(df, "Florida")
+

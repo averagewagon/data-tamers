@@ -28,5 +28,3 @@ state_info <- function(df, year, state){
     geom_col(mapping = aes(x = Metrics, y = Values))
 }
 
-df <- read.csv("aggregate.csv", stringsAsFactors = F)
-state_info(df,"1995", "Alabama")
