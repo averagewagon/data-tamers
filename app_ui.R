@@ -59,13 +59,13 @@ overview_panel <- mainPanel(
 )
 
 overview_sidebar_panel <- sidebarPanel(
-  HTML("<h3>The Questions</h3>
-        <ul>
-          <li>Over the 20 year period, how do the different metric change across the states?</li>
-          <li>Which states went into debt over the different years?</li>
-          <li>What is the distribution of each metric for each state for a given year?</li>
-        </ul>
-       ")
+  h3("The Questions"),
+  
+  tags$ul(
+    tags$li("Over the 20 year period, how do the different metric change across the states?"), 
+    tags$li("Which states went into debt over the different years?"), 
+    tags$li("What is the distribution of each metric for each state for a given year?")
+  )
 )
 
 overview_page <- tabPanel(
@@ -103,7 +103,7 @@ map_sidebar_content <- sidebarPanel(
       "Local Revenue" = "Local Revenue",
       "Total Expenditures" = "Total Expenditures",
       "Salaries" = "Salaries",
-      "Teacher Revenue" = "Teacher Revenue"
+      "Teacher Salaries" = "Teacher Salaries"
     ),
     selected = "Total Revenue"
   )
@@ -144,69 +144,68 @@ bar_sidebar_content <- sidebarPanel(
   
   # Select dropdown for which state to display
   selectInput(
-    "state",
+    "bar_state",
     label = "State",
     choices = list(
-      "USA" = "USA",
-      "Alabama" = "AL",
-      "Alaska" = "AK",
-      "Arizona" = "AZ",
-      "Arkansas" = "AR",
-      "California" = "CA",
-      "Colorado" = "CO",
-      "Connecticut" = "CT",
-      "Delaware" = "DE",
-      "Florida" = "FL",
-      "Georgia" = "GA",
-      "Hawaii" = "HI",
-      "Idaho" = "ID",
-      "Illinois" = "IL",
-      "Indiana" = "IN",
-      "Iowa" = "IA",
-      "Kansas" = "KS",
-      "Kentucky" = "KY",
-      "Louisiana" = "LA",
-      "Maine" = "ME",
-      "Maryland" = "MD",
-      "Massachusetts" = "MA",
-      "Michigan" = "MI",
-      "Minnesota" = "MN",
-      "Mississippi" = "MS",
-      "Missouri" = "MO",
-      "Montana" = "MT",
-      "Nebraska" = "NE",
-      "Nevada" = "NV",
-      "New Hampshire" = "NH",
-      "New Jersey" = "NJ",
-      "New Mexico" = "NM",
-      "New York" = "NY",
-      "North Carolina" = "NC",
-      "North Dakota" = "ND",
-      "Ohio" = "OH",
-      "Oklahoma" = "OK",
-      "Oregon" = "OR",
-      "Pennsylvania" = "PA",
-      "Rhode Island" = "RI",
-      "South Carolina" = "SC",
-      "South Dakota" = "SD",
-      "Tennessee" = "TN",
-      "Texas" = "TX",
-      "Utah" = "UT",
-      "Vermont" = "VT",
-      "Virginia" = "VA",
-      "Washington" = "WA",
-      "West Virginia" = "WV",
-      "Wisconsin" = "WI",
-      "Wyoming" = "WY",
-      "District of Columbia" = "DC"
+      "Alabama",
+      "Alaska",
+      "Arizona",
+      "Arkansas",
+      "California",
+      "Colorado",
+      "Connecticut",
+      "Delaware",
+      "Florida",
+      "Georgia",
+      "Hawaii",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Kentucky",
+      "Louisiana",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "Michigan",
+      "Minnesota",
+      "Mississippi",
+      "Missouri",
+      "Montana",
+      "Nebraska",
+      "Nevada",
+      "New Hampshire",
+      "New Jersey",
+      "New Mexico",
+      "New York",
+      "North Carolina",
+      "North Dakota",
+      "Ohio",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+      "Rhode Island",
+      "South Carolina",
+      "South Dakota",
+      "Tennessee",
+      "Texas",
+      "Utah",
+      "Vermont",
+      "Virginia",
+      "Washington",
+      "West Virginia",
+      "Wisconsin",
+      "Wyoming",
+      "District of Columbia" =  "District Of Columbia"
     ),
-    selected = "USA"
+    selected = "AL"
   )
 )
 
 # the Main Panel, which holds the graph for population
 bar_main_content <- mainPanel(
-  #plotOutput("bar", height = "800px")
+  plotOutput("bar", height = "800px")
 )
 
 # populations tab panel, which has the pops sidebar and main content.
@@ -227,14 +226,71 @@ bar_panel <- tabPanel(
   )
 )
 
-# ==== Summary ====
+# ==== diverging ====
 
 div_sidebar_content <- sidebarPanel(
-  
+  selectInput(
+    "div_state",
+    label = "State",
+    choices = list(
+      "Alabama",
+      "Alaska",
+      "Arizona",
+      "Arkansas",
+      "California",
+      "Colorado",
+      "Connecticut",
+      "Delaware",
+      "Florida",
+      "Georgia",
+      "Hawaii",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Kentucky",
+      "Louisiana",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "Michigan",
+      "Minnesota",
+      "Mississippi",
+      "Missouri",
+      "Montana",
+      "Nebraska",
+      "Nevada",
+      "New Hampshire",
+      "New Jersey",
+      "New Mexico",
+      "New York",
+      "North Carolina",
+      "North Dakota",
+      "Ohio",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+      "Rhode Island",
+      "South Carolina",
+      "South Dakota",
+      "Tennessee",
+      "Texas",
+      "Utah",
+      "Vermont",
+      "Virginia",
+      "Washington",
+      "West Virginia",
+      "Wisconsin",
+      "Wyoming",
+      "District of Columbia" =  "District Of Columbia"
+    ),
+    selected = "AL"
+  )
 )
 
 div_main_content <- mainPanel(
-  
+  plotOutput("div", height = "800px")
 )
 
 # populations tab panel, which has the pops sidebar and main content.

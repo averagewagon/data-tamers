@@ -4,7 +4,9 @@ library("ggplot2")
 library("stringr")
 
 # Read in summary table
-divergingMap <- function(df,state) {
+divergingMap <- function(state) {
+  
+  df <- read.csv("data/funding/prepped/aggregate.csv", stringsAsFactors = F)
   
   # Create new column to color the vaules
   df$Spending <- ifelse(df$Total.Revenue < df$Total.Expenditures,
@@ -26,7 +28,7 @@ divergingMap <- function(df,state) {
     scale_fill_manual(name = "Yearly School Spending",
                       labels = c("Debt", "Surplus"),
                       values = c("surplus" = "#00ba38", "debt" = "#f8766d")) +
-    labs(title = "Educationl Spending By State", y = "Spending Amount") +
+    labs(title = "Educational Spending By State", y = "Dollars per Student") +
     coord_flip()
 }
 
